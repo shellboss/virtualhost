@@ -77,7 +77,7 @@ if [ "$action" == 'create' ]
 			<Directory />
 				AllowOverride All
 			</Directory>
-			<Directory $rootDir>
+			<Directory "/usr/lib/cgi-bin">
 				Options Indexes FollowSymLinks MultiViews
 				AllowOverride all
 				Require all granted
