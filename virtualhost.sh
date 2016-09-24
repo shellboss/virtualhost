@@ -57,6 +57,12 @@ if [ "$action" == 'create' ]
 			mkdir $rootDir
 			### give permission to root dir
 			chmod 755 $rootDir
+
+            ### make build directory
+            chmod 755 $rootDir
+            mkdir $rootDir/build
+            chmod 777 $rootDir/build
+			
 			### write test file in the new domain dir
 			if ! echo "<?php echo phpinfo(); ?>" > $rootDir/phpinfo.php
 			then
